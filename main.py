@@ -57,7 +57,7 @@ def main():
 
     with col2:
         st.title('My YOutube video of this website')
-        components.html("""<iframe width="560" height="315" src="https://www.youtube.com/embed/HR6Tyh47nJo?si=oV4o_T-FPeRycSII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>""")
+        components.html("""<iframe width="560" height="480" src="https://www.youtube.com/embed/SRHBKB1rcsw?si=ucWuST1SsqAtcsJh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>""")
 
 
     st.title('My Skills')

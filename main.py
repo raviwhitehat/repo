@@ -37,7 +37,7 @@ def main():
         genai.configure(api_key=API_KEY)
         model = genai.GenerativeModel('gemini-1.5-flash')
         prompt = message + user_prompt
-        response = model.generate_content("Write a story about a AI and magic")
+        response = model.generate_content(prompt)
         st.write(response.text)
 
     col1,col2 = st.columns(2)
@@ -57,6 +57,8 @@ def main():
 
     with col2:
         st.title('My YOutube video of this website')
+        components.html("""<iframe width="560" height="315" src="https://www.youtube.com/embed/HR6Tyh47nJo?si=oV4o_T-FPeRycSII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>""")
+
 
     st.title('My Skills')
     st.slider('Programming',0,100,59)
